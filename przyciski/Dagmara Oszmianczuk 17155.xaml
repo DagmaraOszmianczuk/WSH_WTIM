@@ -1,0 +1,236 @@
+﻿<Window x:Class="przyciski.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:przyciski"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Storyboard x:Key="NIEKLIKAJ">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.1" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="rectangle">
+                <EasingDoubleKeyFrame KeyTime="0" Value="9.686"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="20"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="40"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="50"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="70"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="100"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="140"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="170"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="label">
+                <EasingColorKeyFrame KeyTime="0" Value="Black"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.1" Value="White"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle1">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFE02741"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.1" Value="#FFEB63E3"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle">
+                <EasingColorKeyFrame KeyTime="0" Value="#FCD12121"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.1" Value="White"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFED6C9B"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.1" Value="#CC800808"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="NIEWOLNO">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="label1">
+                <EasingColorKeyFrame KeyTime="0" Value="Black"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle2">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF5CE22B"/>
+                <EasingColorKeyFrame KeyTime="0:0:3" Value="#FFE3FA64"/>
+            </ColorAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle3">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.5" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="rectangle3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="10"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="20"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="40"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="45"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="rectangle3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-10"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-20"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-35"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="label1">
+                <DiscreteObjectKeyFrame KeyTime="0" Value=" NIE WOLNO"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="MÓWIŁAM!"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3" Value="MÓWIŁAM!"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.FontSize)" Storyboard.TargetName="label1">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="18"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="24"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="UWAZAJ">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="label2">
+                <EasingColorKeyFrame KeyTime="0" Value="Black"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="Black"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.9" Value="Red"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.1" Value="Black"/>
+            </ColorAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle4">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="rectangle4">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="9.788"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="45"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle4">
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#CCFFFFFF"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.7" Value="#CCFFFFFF"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.FontSize)" Storyboard.TargetName="label2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="18"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="24"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="18"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="KLIKNIJ">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rectangle5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.143"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="1.411"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.993"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="rectangle5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.143"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="1.411"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.993"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="11.892"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="34.189"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.611"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="rectangle5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="3.2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="9.2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.164"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="label3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.143"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="1.411"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.993"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="label3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.143"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="1.411"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.993"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="label3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="11.892"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="34.189"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.611"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="label3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="3.2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="9.2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.164"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.FontSize)" Storyboard.TargetName="label3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="18"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="24"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle5">
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#FFEAED26"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.7" Value="#FF26ED32"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.1" Value="sc#1, 0.278894275, 0.3712377, 0.7605245"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#FFED2626"/>
+            </ColorAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="label3">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="KLIKNIJ"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="PROSZĘ"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.6" Value="KLIKNIJ"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="label">
+            <BeginStoryboard x:Name="NIEKLIKAJ_BeginStoryboard" Storyboard="{StaticResource NIEKLIKAJ}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown" SourceName="label1">
+            <BeginStoryboard x:Name="UWAZAJ_BeginStoryboard" Storyboard="{StaticResource NIEWOLNO}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown" SourceName="label2">
+            <BeginStoryboard x:Name="UWAZAJ_BeginStoryboard1" Storyboard="{StaticResource UWAZAJ}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown" SourceName="label3">
+            <BeginStoryboard Storyboard="{StaticResource KLIKNIJ}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <Rectangle x:Name="rectangle1" Fill="#FFE32B46" HorizontalAlignment="Left" Height="44.8" Margin="9.6,101.6,0,0" VerticalAlignment="Top" Width="166.486" RadiusY="5.9" RadiusX="5.9">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Label x:Name="label" Content="NIE KLIKAJ" HorizontalAlignment="Center" Height="44.8" Margin="9.6,101.6,617.514,274" VerticalAlignment="Center" Width="166.486" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="18" FontFamily="Tahoma"/>
+        <Rectangle x:Name="rectangle2" Fill="#FF5BE02B" HorizontalAlignment="Left" Height="44.8" Margin="186.405,101.6,0,0" VerticalAlignment="Top" Width="166.486" RadiusY="4.895" RadiusX="4.895">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Label x:Name="label1" Content="NIE WOLNO" HorizontalAlignment="Center" Height="44.8" Margin="186.405,101.6,440.709,274" VerticalAlignment="Center" Width="166.486" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="18" FontFamily="Tahoma"/>
+        <Rectangle Fill="#FF2BB2E0" HorizontalAlignment="Left" Height="44.8" Margin="368.714,101.6,0,0" VerticalAlignment="Top" Width="166.486" RadiusY="4.486" RadiusX="4.486">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Label x:Name="label2" Content="UWAŻAJ" HorizontalAlignment="Center" Height="44.8" Margin="368.714,101.6,258.4,274" VerticalAlignment="Center" Width="166.486" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="18" FontFamily="Tahoma"/>
+        <Rectangle x:Name="rectangle5" Fill="#FFEAED26" HorizontalAlignment="Left" Height="44.8" Margin="551.114,101.6,0,0" VerticalAlignment="Top" Width="166.486" RadiusY="5.286" RadiusX="5.286" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10"/>
+            </Rectangle.Effect>
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Label x:Name="label3" Content="KLIKNIJ" HorizontalAlignment="Center" Height="44.8" Margin="551.114,101.6,76,274" VerticalAlignment="Center" Width="166.486" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="18" FontFamily="Tahoma" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Rectangle x:Name="rectangle" Fill="White" HorizontalAlignment="Left" Height="44.8" Margin="9.6,101.6,0,0" VerticalAlignment="Top" Width="9.686" RadiusY="5.9" RadiusX="5.9" Visibility="Hidden"/>
+        <Rectangle x:Name="rectangle3" Fill="White" HorizontalAlignment="Left" Height="10" Margin="186.405,136.4,0,0" VerticalAlignment="Top" Width="166.486" RadiusY="4.895" RadiusX="4.895" Visibility="Hidden" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="rectangle4" HorizontalAlignment="Left" Height="9.788" Margin="368.714,101.6,0,0" VerticalAlignment="Top" Width="166.486" RadiusY="4.486" RadiusX="4.486" Visibility="Hidden" Fill="Black"/>
+
+    </Grid>
+</Window>

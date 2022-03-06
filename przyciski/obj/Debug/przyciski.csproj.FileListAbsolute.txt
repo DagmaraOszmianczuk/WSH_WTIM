@@ -1,0 +1,16 @@
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\bin\Debug\przyciski.exe.config
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\bin\Debug\przyciski.exe
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\bin\Debug\przyciski.pdb
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\obj\Debug\przyciski.csprojAssemblyReference.cache
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\obj\Debug\App.g.cs
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\obj\Debug\przyciski_MarkupCompile.cache
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\obj\Debug\przyciski_MarkupCompile.lref
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\obj\Debug\MainWindow.baml
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\obj\Debug\przyciski.g.resources
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\obj\Debug\przyciski.Properties.Resources.resources
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\obj\Debug\przyciski.csproj.GenerateResource.cache
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\obj\Debug\przyciski.csproj.CoreCompileInputs.cache
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\obj\Debug\przyciski.exe
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\obj\Debug\przyciski.pdb
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\obj\Debug\Dagmara Oszmianczuk 17155.g.cs
+C:\Users\dagma\OneDrive\Desktop\Współczesne techniki informatyczne multimedialne\przyciski\przyciski\obj\Debug\Dagmara Oszmianczuk 17155.baml
